@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang cá nhân của tôi</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Trần Dương An</h1>
+
+        <h2>Giới thiệu bản thân</h2>
+
+        <img src="https://th.bing.com/th/id/OIP.6f7iKx3DEl7Rvdcp_917FgHaJL?w=146&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Ảnh đại diện của Trần Dương An" width="200">
+
+        <p>
+            Xin chào! Mình là <strong>Trần Dương An</strong>,
+            hiện đang là <b>sinh viên</b>.
+            Mình yêu thích <i>lập trình</i> và muốn
+            <u>phát triển kỹ năng công nghệ</u>.
+        </p>
+
+        <p>
+            Mình đang học <span>HTML, CSS, JavaScript</span>
+            và tìm hiểu thêm về lập trình.
+            <small>Đây là trang web cá nhân của mình.</small>
+        </p>
+    </header>
+
+    <section>
+        <h3>Sở thích</h3>
+
+        <ul>
+            <li>Nghe nhạc</li>
+            <li>Chơi game</li>
+            <li>Lập trình</li>
+            <li>Xem phim</li>
+        </ul>
+
+        <h4>Mục tiêu học tập</h4>
+
+        <ol>
+            <li>Cải thiện tiếng Anh</li>
+            <li>Học tốt lập trình Web</li>
+            <li>Học thêm JavaScript</li>
+            <li>Hoàn thành các dự án cá nhân</li>
+        </ol>
+    </section>
+
+    <section>
+        <h4>Kỹ năng</h4>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>MySQL</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Đa phương tiện</h3>
+
+        <h4>Video giới thiệu</h4>
+
+        <video width="600" src="video1.mp4" controls>
+        </video>
+
+        <h4>Audio</h4>
+
+        <audio src="sound1.mp3" controls></audio>
+
+        <h4>Canvas</h4>
+
+        <canvas id="myCanvas" width="500" height="300"
+            style="border: 1px solid black;">
+    </canvas>
+
+        <p>
+            <a href="https://github.com/antran804" target="_blank">
+                GitHub của tôi
+            </a>
+        </p>
+    </section>
+
+    <section>
+        <h5>Thời khóa biểu</h5>
+
+        <table border="1">
+            <tr>
+                <th>Thứ</th>
+                <th>Môn học</th>
+                <th>Thời gian</th>
+                <th>Phòng</th>
+            </tr>
+
+            <tr>
+                <td>Thứ 2</td>
+                <td>Lập trình Web</td>
+                <td>7:00 - 9:00</td>
+                <td>A101</td>
+            </tr>
+
+            <tr>
+                <td>Thứ 3</td>
+                <td>Cơ sở dữ liệu</td>
+                <td>9:00 - 11:00</td>
+                <td>A202</td>
+            </tr>
+
+            <tr>
+                <td>Thứ 5</td>
+                <td>Tiếng Anh</td>
+                <td>7:00 - 9:00</td>
+                <td>B105</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h5>Liên hệ với tôi</h5>
+
+        <form action="#" method="post">
+
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name" required>
+
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <br><br>
+
+            <label for="topic">Bạn muốn liên hệ về:</label>
+
+            <select id="topic" name="topic">
+                <option value="study">Học tập</option>
+                <option value="programming">Lập trình</option>
+                <option value="other">Khác</option>
+            </select>
+
+            <br><br>
+
+            <label for="message">Nội dung:</label>
+            <br>
+
+            <textarea
+                id="message"
+                name="message"
+                rows="5"
+                cols="40"
+                placeholder="Nhập nội dung..."
+            ></textarea>
+
+            <br><br>
+
+            <button type="submit">Gửi</button>
+
+        </form>
+    </section>
+    <script>
+
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+
+        // Hình chữ nhật
+        ctx.fillStyle = "red";
+        ctx.fillRect(50, 50, 100, 80);
+    </script>
+</body>
+</html>
